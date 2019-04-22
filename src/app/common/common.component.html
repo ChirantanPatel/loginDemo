@@ -1,0 +1,26 @@
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+  <h1 style="font-weight:normal">Left Sidebar</h1>
+
+  <ul>
+    <li class="orange"><a routerLink='/tablelist'>Table List</a></li>
+    <li class="blue"><a routerLink='/inputform'>Input Form </a></li>
+    <li class="green"><a href="#">Test 1</a></li>
+    <li class="purple"><a href="#">Test 2 </a></li>
+    <li class="gold"><a href="#">Test 3 </a></li>
+  </ul>
+
+
+  <!-- <a [routerLink]="[ '/path', routeParam ]">name</a> -->
+</p-sidebar>
+<p-menubar [model]="items">
+  <div>
+    <button pButton label="Material Theam" routerLink='/material' icon="fa fa-sign-out"
+      style="margin-left:.25em;margin-right: 10px"> </button>
+    <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></button>
+    <input type="text" pInputText placeholder="Search">
+    <button routerLink="/login" pButton label="Logout" icon="fa fa-sign-out" style="margin-left:.25em"></button>
+  </div>
+</p-menubar>
+<router-outlet></router-outlet>
+
+<!-- <app-side-bar></app-side-bar> -->

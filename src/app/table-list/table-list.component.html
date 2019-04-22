@@ -1,0 +1,25 @@
+<h3>Priority</h3>
+<p-table [columns]="cols" [value]="cars">
+  <ng-template pTemplate="caption">
+    List of Cars
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Vin</th>
+      <th class="ui-p-4">Year</th>
+      <th class="ui-p-5">Brand</th>
+      <th class="ui-p-6">Color</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-car>
+    <tr>
+      <td>{{car.vin}}</td>
+      <td class="ui-p-4">{{car.year}}</td>
+      <td class="ui-p-5">{{car.brand}}</td>
+      <td class="ui-p-6">{{car.color}}</td>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="summary">
+    There are {{cars?.length}} cars
+  </ng-template>
+</p-table>

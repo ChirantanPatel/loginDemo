@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.FSection {
+    padding: 30px 15px 15px 15px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.Back-btn {
+    background-color: #959595;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.LR-btn {
+    min-height: 44px;
+    min-width: 130px !important;
+}
+
+.mr-15 {
+    margin-right: 15px !important;
+}
